@@ -68,6 +68,12 @@ function displayContacts(contacts){
         /**Update Button */
         const updateButton= document.getElementById(`update_${contact.id}`)
         updateButton.addEventListener("click",()=>{
+            
+            /**Hide table */
+            const contactsContainer = document.getElementById("contactsContainer")
+            contactsContainer.style.display="none"
+
+
             /**show update form */
             updateForm.style.display="block"
 
@@ -90,6 +96,7 @@ function displayContacts(contacts){
             const goBackButton= document.getElementById("goBack")
             goBackButton.addEventListener("click",()=>{
                 updateForm.style.display="none"
+                contactsContainer.style.display="block"
             })
 
         })
