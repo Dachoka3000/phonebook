@@ -36,7 +36,7 @@ function postContact(){
 
 /**function for getting */
 function getContacts(){
-    fetch("http://localhost:3000/contacts")
+    fetch("https://api.jsonbin.io/v3/b/64354ec1ebd26539d0a8d283/contacts")
     .then(response=>response.json())
     .then(data=>displayContacts(data))
 }

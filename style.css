@@ -42,6 +42,10 @@ footer p{
 }
 .wrapper{
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 nav{
     height: 10vh;
@@ -51,6 +55,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 #goToIndex a{
     color: white;
@@ -59,4 +71,10 @@ nav{
 form{
     margin: 20px;
     padding: 20px;
+}
+#contactDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
